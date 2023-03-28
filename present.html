@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<title>Present</title>
+	<script src="present.js"></script>
+  </head>
+  <body>
+    <img id="image" src='https://media2.giphy.com/media/VIe5NOnlPxJ9FcONBq/200w.webp?cid=ecf05e473nvvhcx2v8knzuac2708nyjbmwyk1tumf3txtpeg&rid=200w.webp&ct=g'/>
+    <script>
+        window.onload=function(){
+            const image=document.querySelector('#image');
+            image.addEventListener('click',openPresent);
+        }
+        function openPresent(event){
+	        const image=event.currentTarget;
+	        image.src='https://media.giphy.com/media/pYHhlvBu5osDsy6WpG/giphy.gif';
+        }
+    </script>
+  </body>
+</html>
